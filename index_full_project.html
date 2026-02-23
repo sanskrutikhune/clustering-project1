@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clustering Algorithms Complete Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+            font-family: Arial; 
+            background:#f4f7f6; 
+            margin:0; 
+        }
+        header { 
+            background:#2c3e50; 
+            color:white; 
+            padding:2rem; 
+            text-align:center; 
+        }
+        section { 
+            background:white; 
+            margin:2rem auto; 
+            padding:2rem; 
+            width:85%; 
+            border-radius:8px; 
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 { 
+            border-bottom:2px solid #3498db; 
+            padding-bottom:5px; 
+            color:#2c3e50;
+        }
+        img { 
+            display:block; 
+            margin:1rem auto; 
+            max-width:100%; 
+        }
+        ul {
+            padding-left:20px;
+        }
+        .team { 
+            background:#2c3e50; 
+            color:white; 
+            text-align:center; 
+            padding:2rem; 
+            margin-top:2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Clustering Algorithms Project</h1>
+    <p>Information and Visualization on Same Webpage</p>
+</header>
+
+<section>
+    <h2>What is Clustering?</h2>
+    <p>
+        Clustering is an unsupervised machine learning technique used to group similar data points together.
+        It helps in discovering patterns and structures in data without labeled outputs.
+    </p>
+</section>
+
+<section>
+    <h2>1. K-Means Clustering (Centroid-Based)</h2>
+    <p>K-Means divides data into K clusters using centroids.</p>
+    <strong>Advantages:</strong>
+    <ul>
+        <li>Simple and fast</li>
+        <li>Works well for large datasets</li>
+    </ul>
+    <strong>Disadvantages:</strong>
+    <ul>
+        <li>Sensitive to outliers</li>
+        <li>Need to choose K value</li>
+    </ul>
+    <strong>Applications:</strong>
+    <ul>
+        <li>Customer Segmentation</li>
+        <li>Market Analysis</li>
+    </ul>
+    <img src="kmeans.png" alt="KMeans Graph">
+</section>
+
+<section>
+    <h2>2. Density-Based Clustering (DBSCAN)</h2>
+    <p>Forms clusters based on dense regions of data.</p>
+    <strong>Advantages:</strong>
+    <ul>
+        <li>Can detect irregular shapes</li>
+        <li>Handles noise well</li>
+    </ul>
+    <strong>Disadvantages:</strong>
+    <ul>
+        <li>Hard to select parameters</li>
+    </ul>
+    <strong>Applications:</strong>
+    <ul>
+        <li>Geographical data analysis</li>
+        <li>Fraud detection</li>
+    </ul>
+    <img src="dbscan.png" alt="DBSCAN Graph">
+</section>
+
+<section>
+    <h2>3. Distribution-Based Clustering (Gaussian)</h2>
+    <p>Assumes data follows a probability distribution.</p>
+    <strong>Advantages:</strong>
+    <ul>
+        <li>Good for probabilistic models</li>
+    </ul>
+    <strong>Disadvantages:</strong>
+    <ul>
+        <li>Assumes data distribution shape</li>
+    </ul>
+    <strong>Applications:</strong>
+    <ul>
+        <li>Image processing</li>
+        <li>Scientific data analysis</li>
+    </ul>
+    <img src="gaussian.png" alt="Gaussian Graph">
+</section>
+
+<section>
+    <h2>4. Hierarchical Clustering</h2>
+    <p>Builds clusters in a tree-like structure (dendrogram).</p>
+    <strong>Advantages:</strong>
+    <ul>
+        <li>No need to specify cluster number initially</li>
+    </ul>
+    <strong>Disadvantages:</strong>
+    <ul>
+        <li>Computationally expensive</li>
+    </ul>
+    <strong>Applications:</strong>
+    <ul>
+        <li>Biology (Gene classification)</li>
+        <li>Document clustering</li>
+    </ul>
+    <img src="hierarchical.png" alt="Hierarchical Graph">
+</section>
+
+<div class="team">
+    <h2>Our Team</h2>
+    <p>Ms. Arpita Jadhav</p>
+    <p>Ms. Soundarya Klavant</p>
+    <p>Ms. Sanskruti Khune</p>
+</div>
+
+</body>
+</html>
