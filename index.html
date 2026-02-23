@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clustering Algorithms | Data Science</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--white);
+            padding: 2rem 10%;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+        }
+
+        .intro {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 5px solid var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .team-section {
+            background: var(--primary);
+            color: var(--white);
+            padding: 3rem 10%;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .member {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Unsupervised Learning: Clustering</h1>
+    <p>Grouping data points based on similarity</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>What is Clustering?</h2>
+        <p>
+            Clustering is a technique in data mining and machine learning that groups
+            a set of objects in such a way that objects in the same group (called a cluster)
+            are more similar to each other than to those in other groups.
+        </p>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3>1. Centroid-based</h3>
+            <p>Clusters are represented by a central vector. It is efficient but sensitive to outliers.</p>
+            <br><strong>Example:</strong> K-Means Clustering.
+        </div>
+
+        <div class="card">
+            <h3>2. Density-based</h3>
+            <p>Locates regions of high density and separates them from regions of low density.</p>
+            <br><strong>Example:</strong> DBSCAN, OPTICS.
+        </div>
+
+        <div class="card">
+            <h3>3. Distribution-based</h3>
+            <p>Assumes data is composed of distributions like Gaussian distributions.</p>
+            <br><strong>Example:</strong> Expectation-Maximization (EM).
+        </div>
+
+        <div class="card">
+            <h3>4. Hierarchical</h3>
+            <p>Builds a tree of clusters (Dendrogram).</p>
+            <br><strong>Example:</strong> Birch, CURE.
+        </div>
+    </div>
+</div>
+
+<section class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+        <div class="member">Ms. Arpita Jadhav</div>
+        <div class="member">Soundarya Klavant</div>
+        <div class="member">Sanskruti</div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 Clustering Project Page
+</footer>
+
+</body>
+</html>
